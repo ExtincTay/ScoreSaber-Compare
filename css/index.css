@@ -36,11 +36,13 @@ label {
 .p1 {
   float: left;
   text-align: center;
+  margin-top: 20px;
 }
 
 .p2 {
   float: right;
   text-align: center;
+  margin-top: 20px;
 }
 
 .footer {
