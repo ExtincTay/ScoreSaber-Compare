@@ -1,0 +1,126 @@
+body {
+  background-color: #292929;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+  color: white;
+}
+
+input,
+label {
+  margin: .4rem 0;
+}
+
+.name {
+  position: absolute;
+  top: 43%;
+  left: 46%;
+  text-align: center;
+}
+
+.rankcss {
+  position: relative;
+  top: 10%;
+  left: 20px;
+  text-align: center;
+}
+
+.Acccss {
+  position: relative;
+  top: 18%;
+  left: -100px;
+  text-align: center;
+}
+
+.pfp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  position: relative;
+  top: 2%;
+}
+
+.flag {
+  display: block;
+  border-radius: 15%;
+  position: relative;
+  float: left;
+  top: 100px;
+  left: 70px;
+}
+
+.card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  height: 700px;
+  width: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: gray;
+  text-align: center;
+  font-weight: normal;
+}
+
+.footer a {
+  text-decoration: none;
+  color: gray;
+}
+
+.footer a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.bordersel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 20%;
+  color: white;
+}
+
+.bordersel label {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.2em;
+}
+
+.bordersel label input[type="radio"] {
+  display: block;
+  margin: 0.5em auto;
+}
