@@ -42,12 +42,14 @@ label {
 .player1 {
   float: left;
   display: block;
+  margin-top: 2%;
   right: 2%;
 }
 
 .player2 {
   float: right;
   display: block;
+  margin-top: 2%;
   right: 2%;
 }
 
