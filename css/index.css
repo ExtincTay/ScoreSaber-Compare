@@ -41,12 +41,12 @@ label {
 
 .p1iframe {
   float: left;
-  padding-left: 5%;
+  padding-left: 20px;
 }
 
 .p2iframe {
   float: right;
-  padding-right: 5%;
+  padding-right: 20px;
 }
 
 .footer {
