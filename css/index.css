@@ -42,11 +42,13 @@ label {
 .player1 {
   float: left;
   right: 2%;
+  top: 10%;
 }
 
 .player2 {
   float: right;
   right: 2%;
+  top: 10%;
 }
 
 .footer {
