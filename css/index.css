@@ -51,6 +51,8 @@ label {
   color: gray;
   text-align: center;
   font-weight: normal;
+  background-color: black;
+  opacity: 50%;
 }
 
 .footer a {
