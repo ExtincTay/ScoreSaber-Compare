@@ -39,16 +39,14 @@ label {
   margin-right: 30%;
 }
 
-.player1 {
+.p1iframe {
   float: left;
   right: 2%;
-  top: 10%;
 }
 
-.player2 {
+.p2iframe {
   float: right;
   right: 2%;
-  top: 10%;
 }
 
 .footer {
