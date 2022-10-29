@@ -26,22 +26,22 @@ label {
 .p1bar {
   float: left;
   text-align: center;
+  margin-left: 30%;
 }
 
 .p2bar {
   float: right;
   text-align: center;
+  margin-right: 30%;
 }
 
 .p1 {
   float: left;
-  text-align: center;
   margin-top: 20px;
 }
 
 .p2 {
   float: right;
-  text-align: center;
   margin-top: 20px;
 }
 
