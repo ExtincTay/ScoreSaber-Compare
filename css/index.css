@@ -41,12 +41,10 @@ label {
 
 .player1 {
   float: left;
-  margin-top: 20px;
 }
 
 .player2 {
   float: right;
-  margin-top: 20px;
 }
 
 .footer {
