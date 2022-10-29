@@ -33,6 +33,16 @@ label {
   text-align: center;
 }
 
+.p1 {
+  float: left;
+  text-align: center;
+}
+
+.p2 {
+  float: right;
+  text-align: center;
+}
+
 .footer {
   position: fixed;
   left: 0;
