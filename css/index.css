@@ -86,6 +86,13 @@ h2 {
   text-align: center;
 }
 
+#rankdiff {
+  color: white;
+}
+#accdiff {
+  color: white;
+}
+
 .diffs {
   color: white;
   text-align: center;

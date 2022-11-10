@@ -31,6 +31,9 @@ async function get1() {
     document.getElementById("accdiff").innerHTML = accdiff + "%";
 
     if (rankdiff > 0) {
-        document.getElementsByClassName("diffs").style.color = "green";
+        document.getElementById("rankdiff").style.color = "green";
+    }
+    if (accdiff > 0) {
+        document.getElementById("accdiff").style.color = "green";
     }
 }
