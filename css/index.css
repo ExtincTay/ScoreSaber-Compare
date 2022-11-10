@@ -87,19 +87,3 @@ h2 {
   text-align: center;
   left: 50%;
 }
-
-.p1barraw {
-  display: block;
-  right: 20%;
-  float: left;
-  text-align: center;
-  margin-left: 30%;
-}
-
-.p2barraw {
-  display: block;
-  left: 20%;
-  float: right;
-  text-align: center;
-  margin-right: 30%;
-}
