@@ -85,6 +85,7 @@ h2 {
 .diffs {
   color: white;
   text-align: center;
+  left: 50%;
 }
 
 .p1barraw {
