@@ -26,6 +26,7 @@ async function get1() {
     
     acc1 = resultaccavg1;
     acc2 = resultaccavg2;
-    accdiff = Number(acc1) - Number(acc2);
+    accdiffraw = Number(acc1) - Number(acc2);
+    accdiff = accdiffraw.toString().slice(0, 5);
     document.getElementById("accdiff").innerHTML = accdiff + "%";
 }
