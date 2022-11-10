@@ -23,4 +23,9 @@ async function get1() {
     rank2 = JSON.stringify(json2.playerInfo.rank, null, 2);
     rankdiff = Number(rank1) - Number(rank2);
     document.getElementById("rankdiff").innerHTML = rankdiff;
+    
+    acc1 = resultaccavg1;
+    acc2 = resultaccavg2;
+    accdiff = Number(acc1) - Number(acc2);
+    document.getElementById("accdiff").innerHTML = accdiff + "%";
 }
