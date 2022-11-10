@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/index.css">
+  <title>ScoreSaber Compare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onLoad="load()">
+<h1 class="title">ScoreSaber Compare</h1>
+
+<div class="p1bar">
+  <label for="txtInp">Player 1 ScoreSaber ID</label>
+  <input type="text" id="txtInp1" onchange="get1()" autocomplete="off"></input>
+</div>
+<div class="p2bar">
+  <label for="txtInp">Player 2 ScoreSaber ID</label>
+  <input type="text" id="txtInp2" onchange="get2()" autocomplete="off"></input>
+</div>
+
+<div class="player1" id="p1">
+  <h2 id="name1"></h2>
+  <p id="rank1"></p>
+  <p id="Acc1"></p>
+</div>
+
+<div class="player2" id="p2">
+  <h2 id="name2"></h2>
+  <p id="rank2"></p>
+  <p id="Acc2"></p>
+</div>
+
+<br><br><br>
+<div class="footer">
+  <p><a href="https://github.com/ExtincTay/ScoreSaber-Compare">Github</a>  -  <a href="https://taynet.uk">My Site</a>  -  <a href="https://discord.gg/74erf7MAsw">Discord</a></p>
+  <p></p>
+</div>
+
+<script src="js/fetchraw.js"></script>
+</body>
+</html>
