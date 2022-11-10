@@ -71,11 +71,13 @@ label {
 
 .player1raw {
   float: left;
+  position: absolute;
   left: 35%;
   top: 30%;
 }
 .player2raw {
   float: right;
+  position: absolute;
   right: 35%;
   top: 30%;
 }
@@ -87,6 +89,7 @@ h2 {
 .diffs {
   color: white;
   text-align: center;
+  position: absolute;
   left: 50%;
   top: 30%;
 }
