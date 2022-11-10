@@ -29,4 +29,8 @@ async function get1() {
     accdiffraw = Number(acc1) - Number(acc2);
     accdiff = accdiffraw.toString().slice(0, 5);
     document.getElementById("accdiff").innerHTML = accdiff + "%";
+
+    if (rankdiff > 0) {
+        document.getElementsByClassName("diffs").style.color = "green";
+    }
 }
