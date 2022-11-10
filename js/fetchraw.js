@@ -36,4 +36,10 @@ async function get1() {
     if (accdiff > 0) {
         document.getElementById("accdiff").style.color = "green";
     }
+    if (rankdiff < 0) {
+        document.getElementById("rankdiff").style.color = "red";
+    }
+    if (accdiff < 0) {
+        document.getElementById("accdiff").style.color = "red";
+    }
 }
