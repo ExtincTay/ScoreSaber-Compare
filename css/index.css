@@ -72,12 +72,12 @@ label {
 .player1raw {
   float: left;
   left: 35%;
-  top: 20%;
+  top: 30%;
 }
 .player2raw {
   float: right;
   right: 35%;
-  top: 20%;
+  top: 30%;
 }
 h2 {
   color: white;
@@ -88,4 +88,5 @@ h2 {
   color: white;
   text-align: center;
   left: 50%;
+  top: 30%;
 }
