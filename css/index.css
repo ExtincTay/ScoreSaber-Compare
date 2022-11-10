@@ -71,11 +71,11 @@ label {
 
 .player1raw {
   float: left;
-  left: 30%
+  left: 35%
 }
 .player2raw {
   float: right;
-  right: 30%
+  right: 35%
 }
 h2 {
   color: white;
