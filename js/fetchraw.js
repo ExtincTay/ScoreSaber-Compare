@@ -8,6 +8,8 @@ async function get1() {
     document.getElementById("rank1").innerHTML = `<pre>${JSON.stringify(json1.playerInfo.rank, null, 2)}</pre>`;
     document.getElementById("name1").innerHTML = playerNameNoQuotes1;
     document.getElementById("Acc1").innerHTML = resultaccavg1 + "%";
+    document.getElementById("pp1").innerHTML = `<pre>${JSON.stringify(json1.playerInfo.pp, null, 2)}</pre>`;
+
 
     const resp2 = await fetch('https://new.scoresaber.com/api/player/' + txtInp2.value + '/full');
     const json2 = await resp2.json();
@@ -18,6 +20,7 @@ async function get1() {
     document.getElementById("rank2").innerHTML = `<pre>${JSON.stringify(json2.playerInfo.rank, null, 2)}</pre>`;
     document.getElementById("name2").innerHTML = playerNameNoQuotes2;
     document.getElementById("Acc2").innerHTML = resultaccavg2 + "%";
+    document.getElementById("pp2").innerHTML = `<pre>${JSON.stringify(json2.playerInfo.pp, null, 2)}</pre>`;
 
     rank1 = JSON.stringify(json1.playerInfo.rank, null, 2);
     rank2 = JSON.stringify(json2.playerInfo.rank, null, 2);
@@ -30,16 +33,27 @@ async function get1() {
     accdiff = accdiffraw.toString().slice(0, 5);
     document.getElementById("accdiff").innerHTML = accdiff + "%";
 
+    pp1 = JSON.stringify(json1.playerInfo.pp, null, 2);
+    pp2 = JSON.stringify(json2.playerInfo.pp, null, 2);
+    rankdiff = Number(pp1) - Number(pp2);
+    document.getElementById("ppdiff").innerHTML = ppdiff;
+
     if (rankdiff > 0) {
         document.getElementById("rankdiff").style.color = "red";
     }
     if (accdiff > 0) {
         document.getElementById("accdiff").style.color = "green";
     }
+    if (ppdiff > 0) {
+        document.getElementById("ppdiff").style.color = "green";
+    }
     if (rankdiff < 0) {
         document.getElementById("rankdiff").style.color = "green";
     }
     if (accdiff < 0) {
         document.getElementById("accdiff").style.color = "red";
+    }
+    if (ppdiff < 0) {
+        document.getElementById("ppdiff").style.color = "red";
     }
 }
