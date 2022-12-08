@@ -9,7 +9,7 @@ async function get1() {
     document.getElementById("name1").innerHTML = playerNameNoQuotes1;
     document.getElementById("Acc1").innerHTML = resultaccavg1 + "%";
     document.getElementById("pp1").innerHTML = `<pre>${JSON.stringify(json1.playerInfo.pp, null, 2)}</pre>`;
-
+    document.getElementById("rpc1").innerHTML = `<pre>${JSON.stringify(json1.scoreStats.rankedPlayCount, null, 2)}</pre>`;
 
     const resp2 = await fetch('https://new.scoresaber.com/api/player/' + txtInp2.value + '/full');
     const json2 = await resp2.json();
@@ -21,7 +21,8 @@ async function get1() {
     document.getElementById("name2").innerHTML = playerNameNoQuotes2;
     document.getElementById("Acc2").innerHTML = resultaccavg2 + "%";
     document.getElementById("pp2").innerHTML = `<pre>${JSON.stringify(json2.playerInfo.pp, null, 2)}</pre>`;
-
+    document.getElementById("rpc2").innerHTML = `<pre>${JSON.stringify(json2.scoreStats.rankedPlayCount, null, 2)}</pre>`;
+    
     rank1 = JSON.stringify(json1.playerInfo.rank, null, 2);
     rank2 = JSON.stringify(json2.playerInfo.rank, null, 2);
     rankdiff = Number(rank1) - Number(rank2);
@@ -37,6 +38,11 @@ async function get1() {
     pp2 = JSON.stringify(json2.playerInfo.pp, null, 2);
     ppdiff = Number(pp1) - Number(pp2);
     document.getElementById("ppdiff").innerHTML = ppdiff;
+
+    rpc1 = JSON.stringify(json1.scoreStats.rankedPlayCount, null, 2);
+    rpc2 = JSON.stringify(json2.scoreStats.rankedPlayCount, null, 2);
+    rpcdiff = Number(rpc1) - Number(rpc2);
+    document.getElementById("rpcdiff").innerHTML = rpcdiff;
 
     if (rankdiff > 0) {
         document.getElementById("rankdiff").style.color = "red";
