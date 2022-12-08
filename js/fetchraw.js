@@ -35,7 +35,7 @@ async function get1() {
 
     pp1 = JSON.stringify(json1.playerInfo.pp, null, 2);
     pp2 = JSON.stringify(json2.playerInfo.pp, null, 2);
-    rankdiff = Number(pp1) - Number(pp2);
+    ppdiff = Number(pp1) - Number(pp2);
     document.getElementById("ppdiff").innerHTML = ppdiff;
 
     if (rankdiff > 0) {
