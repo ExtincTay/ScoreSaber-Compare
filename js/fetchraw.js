@@ -53,6 +53,9 @@ async function get1() {
     if (ppdiff > 0) {
         document.getElementById("ppdiff").style.color = "green";
     }
+    if (rpcdiff > 0) {
+        document.getElementById("rpcdiff").style.color = "green";
+    }
     if (rankdiff < 0) {
         document.getElementById("rankdiff").style.color = "green";
     }
@@ -61,5 +64,8 @@ async function get1() {
     }
     if (ppdiff < 0) {
         document.getElementById("ppdiff").style.color = "red";
+    }
+    if (rpcdiff < 0) {
+        document.getElementById("rpcdiff").style.color = "red";
     }
 }
